@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const fs = require("fs");
 const path = require("path");
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 const usersFile = path.join(__dirname, "data", "users.json");
 
@@ -29,7 +29,7 @@ function saveUsers(users) {
 // Регистрация
 app.post("/api/register", async (req, res) => {
     const { login, password } = req.body;
-    console.log("Регистрируем:", login);
+    //console.log("Регистрируем:", login);  Можно в console.debug
     const users = loadUsers();
     if (users[login]) return res.status(400).json({ error: "Пользователь уже существует" });
 
@@ -42,7 +42,7 @@ app.post("/api/register", async (req, res) => {
 // Вход
 app.post("/api/login", async (req, res) => {
     const { login, password } = req.body;
-    console.log("Попытка входа:", login);
+    //console.log("Попытка входа:", login); Можно в console.debug
 
     const users = loadUsers();
     const hash = users[login];
@@ -92,10 +92,8 @@ app.post("/api/update", async (req, res) => {
     res.json({ message: "Данные обновлены" });
 });
 
-
-
 console.log("Готов запускать сервер...");
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Сервер запущен на http://localhost:${PORT}`);
 });

@@ -1,6 +1,6 @@
 {
   "name": "mysiteaboutyandex",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This site is an example of my work",
   "main": "server.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/LastCh/MySiteAboutYandex.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Arthur Iamaylov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LastCh/MySiteAboutYandex/issues"

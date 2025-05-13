@@ -21,9 +21,9 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1; /* Чтобы шапка была поверх других элементов */
+    z-index: 1;
     border-radius: 20px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Темная тень для отделения */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     width: 100%;
 }
 
@@ -79,7 +79,6 @@ body {
     border-radius: 2px;
 }
 
-/* Карточки */
 .content-block {
     display: flex;
     flex-wrap: wrap;
@@ -379,7 +378,7 @@ html, body {
     cursor: pointer;
     position: absolute;
     top: 16px;
-    right: 64px; /* немного левее от иконки */
+    right: 64px;
     display: none;
     transition: background-color 0.3s;
 }
