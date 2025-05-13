@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <h2>Личный кабинет</h2>
+        <p>Текущий логин: <strong id="accountName"></strong></p>
+        <input type="text" id="newName" placeholder="Новый логин">
+        <input type="password" id="newPassword" placeholder="Новый пароль">
+        <button onclick="updateUser()">Обновить данные</button>
+        <p id="accountMessage"></p>
+        <div class="account-back">
+            <a href="index.html" class="account-back-link">
+                <img src="images/arrow-left.svg" alt="Назад" class="account-back-icon">
+                На главную
+            </a>
+        </div>
+    </div>
+    <script src="scripts/account.js"></script>
+</body>
+</html>

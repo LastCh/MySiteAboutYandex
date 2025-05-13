@@ -1,0 +1,416 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    padding-top: 40px; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.86); 
+    color: #fff;
+    padding: 5px 0;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Чтобы шапка была поверх других элементов */
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Темная тень для отделения */
+    width: 100%;
+}
+
+.header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #ffcc00; 
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Карточки */
+.content-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    background-color: #222;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+details h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+details p:last-child {
+    margin-bottom: 0;
+}
+
+.details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details h1, .details h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.details h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.details h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+#about-ml {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about-ml p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+#about-ml .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#about-ml .button:hover {
+    background-color: #222;
+}
+
+#applications {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#applications p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+#applications h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#applications ul {
+    list-style: disc;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+#applications ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.user-icon {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.user-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.auth-body {
+    background-color: #f5f5f5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 360px;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.auth-container input,
+.auth-container button {
+    width: 90%;
+    padding: 12px;
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.auth-container button {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.auth-container button:hover {
+    background-color: #f1c400;
+}
+
+.message-success {
+    color: #7cb518;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.message-error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#authMessage {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.switch-link a {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+#logout-btn {
+    background-color: #ffdd55;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 64px; /* немного левее от иконки */
+    display: none;
+    transition: background-color 0.3s;
+}
+
+#logout-btn:hover {
+    background-color: #e6c847;
+}
+
+.account-back {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.account-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.account-back-link:hover {
+    color: #e6c847;
+}
+
+.account-back-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+
