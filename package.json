@@ -1,0 +1,25 @@
+{
+  "name": "mysiteaboutyandex",
+  "version": "1.0.0",
+  "description": "This site is an example of my work",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LastCh/MySiteAboutYandex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LastCh/MySiteAboutYandex/issues"
+  },
+  "homepage": "https://github.com/LastCh/MySiteAboutYandex#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0"
+  }
+}
